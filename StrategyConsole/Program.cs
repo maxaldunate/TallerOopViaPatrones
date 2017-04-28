@@ -1,4 +1,5 @@
 ﻿using System;
+using TallerOop.StrategyCommons;
 
 namespace TallerOop.StrategyConsole
 {
@@ -9,7 +10,7 @@ namespace TallerOop.StrategyConsole
             var paq1 = new Paquete(10, 10, 15, 20);
             var cli = new Cliente("NIF1", "Max", true, true, true);
 
-            var gestor = new GestorDescuentos(cli);
+            var gestor = new CalculoPrecios(cli);
             gestor.SetPrecio(paq1);
             Console.WriteLine("Precio Moroso      = " + paq1.Precio);
 

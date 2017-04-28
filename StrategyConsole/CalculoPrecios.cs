@@ -1,12 +1,13 @@
 ﻿using System;
+using TallerOop.StrategyCommons;
 
 namespace TallerOop.StrategyConsole
 {
-    public class GestorDescuentos
+    public class CalculoPrecios
     {
         private Cliente _cliente;
 
-        public GestorDescuentos(Cliente cliente)
+        public CalculoPrecios(Cliente cliente)
         {
             _cliente = cliente;
         }
