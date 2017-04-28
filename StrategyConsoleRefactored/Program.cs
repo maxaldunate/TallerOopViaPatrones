@@ -1,4 +1,6 @@
 ﻿using System;
+using TallerOop.StrategyCommons;
+using TallerOop.StrategyConsoleRefactored;
 
 namespace TallerOop.StrategyConsole
 {
@@ -9,19 +11,24 @@ namespace TallerOop.StrategyConsole
             var paq1 = new Paquete(10, 10, 15, 20);
             var cli = new Cliente("NIF1", "Max", true, true, true);
 
-            var gestor = new GestorDescuentos(cli);
+            var fact = new CalculatorFactory();
+
+            var gestor = fact.GetCalculator(cli);
             gestor.SetPrecio(paq1);
             Console.WriteLine("Precio Moroso      = " + paq1.Precio);
 
             cli.EsMoroso = false;
+            gestor = fact.GetCalculator(cli);
             gestor.SetPrecio(paq1);
             Console.WriteLine("Precio Socio       = " + paq1.Precio);
 
             cli.EsSocio = false;
+            gestor = fact.GetCalculator(cli);
             gestor.SetPrecio(paq1);
             Console.WriteLine("Precio Gran Cuenta = " + paq1.Precio);
 
             cli.EsGranCuenta = false;
+            gestor = fact.GetCalculator(cli);
             gestor.SetPrecio(paq1);
             Console.WriteLine("Precio General     = " + paq1.Precio);
 
