@@ -22,9 +22,10 @@ Max Aldunate
 
 
 ### Recursos en Ingles
-http://www.dofactory.com/net/iterator-design-pattern
-http://www.dofactory.com/net/strategy-design-pattern
-http://www.dofactory.com/net/state-design-pattern
-http://www.dofactory.com/net/singleton-design-pattern
-https://en.wikipedia.org/wiki/Strategy_pattern#frb-inline
-http://stackoverflow.com/
+[Running .Net online](https://dotnetfiddle.net/)
+[Iterator Pattern](http://www.dofactory.com/net/iterator-design-pattern)
+[Strategy Pattern](http://www.dofactory.com/net/strategy-design-pattern)
+[State Pattern](http://www.dofactory.com/net/state-design-pattern)
+[Singleton Pattern](http://www.dofactory.com/net/singleton-design-pattern)
+[Wiki Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern#frb-inline)
+[StackOverflow](http://stackoverflow.com/)
